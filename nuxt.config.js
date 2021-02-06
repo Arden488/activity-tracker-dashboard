@@ -40,6 +40,26 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://firebase.nuxtjs.org/
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyAO2wJL1suOGZ3XSGQe_L4v1z9Ezia3sNw',
+          authDomain: 'tracker-47ddf.firebaseapp.com',
+          projectId: 'tracker-47ddf',
+          databaseURL: null,
+          storageBucket: 'tracker-47ddf.appspot.com',
+          messagingSenderId: '704615672308',
+          appId: '1:704615672308:web:127db1ae7b6084d3d931a1',
+          // measurementId: '<measurementId>',
+        },
+        services: {
+          auth: true,
+          firestore: true,
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
